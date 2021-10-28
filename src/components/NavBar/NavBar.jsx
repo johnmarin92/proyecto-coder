@@ -1,9 +1,16 @@
-import React from 'react'
 import './Nav.css'
-let Nav = () => {
+import CartWidget from '../CartWidget'
+
+
+
+
+const NavBar = () => {
     return(
+        
         <nav>
+            <CartWidget/>
             <div className="logo"><h1>My E-commerce</h1></div>
+            
             <ul>
                 <li>Home</li>
                 <li>Tienda</li>
@@ -11,6 +18,10 @@ let Nav = () => {
                 <li>Formulario</li>
             </ul>
         </nav>
+
+        
+
+        
     )
 }
-export default Nav
+export default NavBar
